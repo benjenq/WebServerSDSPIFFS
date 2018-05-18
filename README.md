@@ -12,8 +12,15 @@ Chip module base on ESP32 or ESP8266 with support `LED_BUILTIN`. Ex:
    
 **How to work ?**
  
-0. **Only for ESP32 users**: Download library *"WebServer_tng"* and install in *~/Documents/Arduino/libraries* <br>
+0. Downlad & install [Arduino IDE](https://www.arduino.cc/en/Main/Software)<br>
+- Code for ESP32<br>
+https://github.com/espressif/arduino-esp32 <br>
+***Only for ESP32 users***: Download library *"WebServer_tng"* and install in *~/Documents/Arduino/libraries* <br>
 **https://github.com/bbx10/WebServer_tng**
+
+- Code for ESP8266<br>
+https://github.com/esp8266/Arduino
+
  
 1. Fill up your wifi parameter "ssid" and "password" related to your network enviroment.
 2. Choose one from SPIFFS or SD Card Reader:
