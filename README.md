@@ -11,7 +11,9 @@ Chip module base on ESP32 or ESP8266 with support `LED_BUILTIN`. Ex:
 ![Image of ESP8266](data/esp8266base.jpg)<br>
    
 **Software Requirement**
-Downlad & install [Arduino IDE](https://www.arduino.cc/en/Main/Software)<br>
+- Downlad & install [Arduino IDE](https://www.arduino.cc/en/Main/Software)<br>
+https://www.arduino.cc/en/Main/Software
+
 - Arduino code for ESP32<br>
 https://github.com/espressif/arduino-esp32 <br>
 ***Only for ESP32 users***: Download library *"WebServer_tng"* and install in *~/Documents/Arduino/libraries* <br>
