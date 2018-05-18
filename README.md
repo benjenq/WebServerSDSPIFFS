@@ -10,9 +10,8 @@ Chip module base on ESP32 or ESP8266 with support `LED_BUILTIN`. Ex:
 - Built-in led on NodeMCU, WEMOS D1/mini, base on ESP8266 chip.<br>
 ![Image of ESP8266](data/esp8266base.jpg)<br>
    
-**How to work ?**
- 
-0. Downlad & install [Arduino IDE](https://www.arduino.cc/en/Main/Software)<br>
+**Software Requirement**
+Downlad & install [Arduino IDE](https://www.arduino.cc/en/Main/Software)<br>
 - Arduino code for ESP32<br>
 https://github.com/espressif/arduino-esp32 <br>
 ***Only for ESP32 users***: Download library *"WebServer_tng"* and install in *~/Documents/Arduino/libraries* <br>
@@ -21,6 +20,7 @@ https://github.com/espressif/arduino-esp32 <br>
 - Arduino code for ESP8266<br>
 https://github.com/esp8266/Arduino
 
+**How to work ?**
 1. Fill up your wifi parameter "ssid" and "password" related to your network enviroment.
 2. Choose one from SPIFFS or SD Card Reader:
    Mark or Unmark `#define USE_SPIFFS`  in **BeSD_SPIFFS.h** (Line 36)<br>
