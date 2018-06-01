@@ -15,7 +15,8 @@
  *     Mark or Unmark "#define USE_SPIFFS" in BeSD_SPIFFS.h (Line 36)
  *     See header comment in BeSD_SPIFFS.h
  *  3. Build and upload the firmware to ESP8266 or ESP32 module with Arduino IDE.
- *  4. Use web browser to connect to this webserver http://espwebserver.local . Done.
+ *  4. Use web browser to connect to this webserver ( http://esp32webserver.local for ESP32 module, or http://esp32webserver.local for ESP8266 module ).
+ *  5. Done.
 */
 const char* ssid     = "........"; //your ssid
 const char* password = "........"; //your passwd
