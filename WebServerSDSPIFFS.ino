@@ -7,8 +7,12 @@
  *  
  *  - How to work ? -
  *
- *  0. Only for ESP32 users: Download library "WebServer_tng" and install in ~/Documents/Arduino/libraries
- *  https://github.com/bbx10/WebServer_tng
+ *  0. - Install Arduino code
+ *  For ESP32:
+ *  https://github.com/espressif/arduino-esp32 <br>
+ *  
+ *  For ESP8266<br>
+ *  https://github.com/esp8266/Arduino
  *
  *  1. Fill up your wifi parameter "ssid" and "password" related to your network enviroment.
  *  2. Choose one from SPIFFS or SD Card Reader:

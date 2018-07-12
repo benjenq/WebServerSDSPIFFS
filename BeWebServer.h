@@ -5,7 +5,7 @@
   #include <ESP8266WebServer.h>
   ESP8266WebServer webserver(80);
 #elif defined(ESP32)
-  #include <WebServer.h> //https://github.com/bbx10/WebServer_tng ，Put it into ~/Documents/Arduino/libraries
+  #include <WebServer.h>
   WebServer webserver(80);
 #endif
 

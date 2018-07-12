@@ -16,8 +16,6 @@ https://www.arduino.cc/en/Main/Software
 
 - Arduino code for ESP32<br>
 https://github.com/espressif/arduino-esp32 <br>
-***Only for ESP32 users***: Download library *"WebServer_tng"* and install in *~/Documents/Arduino/libraries* <br>
-**https://github.com/bbx10/WebServer_tng**
 
 - Arduino code for ESP8266<br>
 https://github.com/esp8266/Arduino
