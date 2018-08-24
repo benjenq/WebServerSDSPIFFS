@@ -33,7 +33,7 @@
 #ifndef BESD_SPIFFS_H
 #define BESD_SPIFFS_H
 
-//#define USE_SPIFFS  // <--- Mark with "//" for use SD Card. Remove "//" (unmark) to use SPIFFS.
+#define USE_SPIFFS  // <--- Mark with "//" for use SD Card. Remove "//" (unmark) to use SPIFFS.
 
 #ifdef USE_SPIFFS
  #if defined(ESP32)
