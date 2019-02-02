@@ -27,10 +27,11 @@ https://github.com/esp8266/Arduino
    Mark or Unmark `#define USE_SPIFFS` in [**BeSD_SPIFFS.h**](https://github.com/benjenq/WebServerSDSPIFFS/blob/master/BeSD_SPIFFS.h) (Line 36)<br>
    See header comment in [**BeSD_SPIFFS.h**](https://github.com/benjenq/WebServerSDSPIFFS/blob/master/BeSD_SPIFFS.h)
 4. Build and upload the firmware to ESP32 or ESP8266 module with Arduino IDE.
-5. Use web browser to connect to this webserver (**http://esp32webserver.local** for ESP32 module, or **http://esp8266webserver.local** for ESP8266 module) . 
-6. Done.
+5. Use "Sketch Data Upload" tools to upload all files data\\\*.\* to SPIFFS , or copy all files data\\\*.\* to SD card. See [data\\README.md](https://github.com/benjenq/WebServerSDSPIFFS/blob/master/data/README.md) for more information.
+6. Use web browser to connect to this webserver (**http://esp32webserver.local** for ESP32 module, or **http://esp8266webserver.local** for ESP8266 module) . 
+7. Done.
 
-**Known issue**
-- ESP32: Web Server is **Very Very** slow. Hope [official version](https://github.com/espressif/arduino-esp32) library *WebServer* or SDK will fix it soon.
+**Known issue (ESP32 ONLY)**
+- ESP32: Web Server is **Very Very** slow. Get error message ``Failed to load resource: net::ERR_CONNECTION_RESET`` via Google Chrome. Hope it could be solve if [official version](https://github.com/espressif/arduino-esp32) library *WebServer* or SDK could be.
 
 
