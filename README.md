@@ -23,8 +23,8 @@ https://github.com/esp8266/Arduino
 
 #### 3rd library for Arduino code
 [me-no-dev/**ESPAsyncWebServer**](https://github.com/me-no-dev/ESPAsyncWebServer)：
-- **For ESP8266: ** [ESPAsyncTCP](https://github.com/me-no-dev/ESPAsyncTCP) required.
-- **For ESP32: ** [AsyncTCP](https://github.com/me-no-dev/AsyncTCP) required.  
+- **For ESP8266:** [ESPAsyncTCP](https://github.com/me-no-dev/ESPAsyncTCP) required.
+- **For ESP32:** [AsyncTCP](https://github.com/me-no-dev/AsyncTCP) required.  
 
 More detail about [**ESPAsyncWebServer**](https://github.com/me-no-dev/ESPAsyncWebServer)...
 
