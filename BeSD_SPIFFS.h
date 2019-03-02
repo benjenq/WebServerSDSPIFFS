@@ -13,7 +13,7 @@
  *  How to install: (ESP8266 / ESP32 both the same)
  *  https://github.com/me-no-dev/arduino-esp32fs-plugin
  * 
- *  For SD card users:
+ *  For SD card users: (NOT Tested yet. Maybe work.)
  *  
  *  1. Format SD card with FAT32 type on PC , and copy all files data\*.* to SD root directory.
  *  2. Attach the SD card to the following pins:

@@ -1,7 +1,7 @@
-## ESP32 / ESP8266 WebServer Sample<br>
+## ESP32 / ESP8266 WebServer Sample  
 ##### Control built-In led from webpage which located on SPIFFS or external SD card. #####
 
-**Device Requirement**
+### Device Requirement
 
 Chip module base on ESP32 or ESP8266 with support `LED_BUILTIN`. Ex: 
 - Built-in led on NodeMCU-32S base on ESP32 chip. <br>
@@ -10,17 +10,25 @@ Chip module base on ESP32 or ESP8266 with support `LED_BUILTIN`. Ex:
 - Built-in led on NodeMCU, WEMOS D1/mini, base on ESP8266 chip.<br>
 ![Image of ESP8266](data/esp8266base.jpg)<br>
    
-**Software Requirement**
+### Software Requirement
 - Downlad & install [Arduino IDE](https://www.arduino.cc/en/Main/Software)<br>
 https://www.arduino.cc/en/Main/Software
 
-- Arduino code for ESP32<br>
+#### Arduino code
+- Arduino code for ESP32 (for ESP32 user)<br>
 https://github.com/espressif/arduino-esp32 <br>
 
-- Arduino code for ESP8266<br>
+- Arduino code for ESP8266 (for ESP8266 user)<br>
 https://github.com/esp8266/Arduino
 
-**How to work ?**
+#### 3rd library for Arduino code
+[me-no-dev/**ESPAsyncWebServer**](https://github.com/me-no-dev/ESPAsyncWebServer)：
+- **For ESP8266: ** [ESPAsyncTCP](https://github.com/me-no-dev/ESPAsyncTCP) required.
+- **For ESP32: ** [AsyncTCP](https://github.com/me-no-dev/AsyncTCP) required.  
+
+More detail about [**ESPAsyncWebServer**](https://github.com/me-no-dev/ESPAsyncWebServer)...
+
+### How to work ?
 1. Launch Arduino IDE and open file [**WebServerSDSPIFFS.ino**](https://github.com/benjenq/WebServerSDSPIFFS/blob/master/WebServerSDSPIFFS.ino) . 
 2. Fill up your wifi parameter `ssid` and `password` related to your network enviroment.
 3. Choose one from SPIFFS or SD Card Reader:
@@ -31,7 +39,8 @@ https://github.com/esp8266/Arduino
 6. Use web browser to connect to this webserver (**http://esp32webserver.local** for ESP32 module, or **http://esp8266webserver.local** for ESP8266 module) . 
 7. Done.
 
-**Known issue (ESP32 ONLY)**
-- ESP32: Web Server is **Very Very** slow. Get error message ``Failed to load resource: net::ERR_CONNECTION_RESET`` via Google Chrome. Hope it could be solve if [official version](https://github.com/espressif/arduino-esp32) library *WebServer* or SDK could be.
+**~~Known issue (ESP32 ONLY)~~**  
+(Fixed with **ESPAsyncWebServer** instead of official WebServer.h)
+- ~~ESP32: Web Server is **Very Very** slow. Get error message ``Failed to load resource: net::ERR_CONNECTION_RESET`` via Google Chrome. Hope it could be solve if [official version](https://github.com/espressif/arduino-esp32) library *WebServer* or SDK could be.~~
 
 

@@ -2,12 +2,15 @@
 #define BEWERSERVER_H
 
 #if defined(ESP8266)
-  #include <ESP8266WebServer.h>
-  ESP8266WebServer webserver(80);
+  //#include <ESP8266WebServer.h>
+  //ESP8266WebServer webserver(80);
 #elif defined(ESP32)
-  #include <WebServer.h>
-  WebServer webserver(80);
+  //#include <WebServer.h>
+  //WebServer webserver(80);
 #endif
+
+#include "ESPAsyncWebServer.h"
+AsyncWebServer webserver(80);
 
 #include "BeWebServer_Handle.h"
 
@@ -28,7 +31,7 @@ void BeWebServer_Setup() {
 }
 
 void BeWebServer_Loop() {
-  webserver.handleClient();
+  //webserver.handleClient();
 }
 
 

@@ -14,6 +14,11 @@
  *  For ESP8266<br>
  *  https://github.com/esp8266/Arduino
  *
+ *  3rd library for Arduino code
+ *  ESPAsyncWebServer: https://github.com/me-no-dev/ESPAsyncWebServer
+ *  - For ESP8266: ESPAsyncTCP required. https://github.com/me-no-dev/ESPAsyncTCP
+ *  - ESP32: AsyncTCP required. https://github.com/me-no-dev/AsyncTCP
+ *
  *  1. Fill up your wifi parameter "ssid" and "password" related to your network enviroment.
  *  2. Choose one from SPIFFS or SD Card Reader:
  *     Mark or Unmark "#define USE_SPIFFS" in BeSD_SPIFFS.h (Line 36)
