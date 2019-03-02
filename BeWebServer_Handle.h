@@ -26,7 +26,12 @@ void handleMcuName() {
 void handleBuiltinLed() {
   int state = digitalRead(LED_BUILTIN);  // get the current state of GPIO1 pin
   digitalWrite(LED_BUILTIN, !state);
-  serverSend(200, "text/plain", "{\"code\":0, \"result\":\"OK\"}");
+#if defined(ESP8266)
+  String ledState = state ? "On" : "Off";
+#elif defined(ESP32)
+  String ledState = state ? "Off" : "On";
+#endif
+  serverSend(200, "text/plain", "{\"code\":0, \"result\":\"" + ledState + "\"}");
 }
 
 void handleNotFound() {

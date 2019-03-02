@@ -34,7 +34,12 @@ function pushButton(apiurl) {
 }
 
 function statusSuccess(data) {
-    console.log(data);
+    //console.log(data);
+    if (data.code == 0) {
+        var classname = $('#ledstste').attr('class');
+        $('#ledstste').removeClass(classname);
+        $('#ledstste').addClass(data.result.concat('State'));
+    }
 }
 
 function getMcuName(apiurl) {
@@ -49,14 +54,20 @@ function getMcuName(apiurl) {
         timeout: 16000
     }).done(function (result) {
         console.log('ajax done');
+        if (result.code == 0) {
+            $("#mcuTitle").text(result.result.concat(' Built-In LED Control'));
+            $("title").text(result.result.concat(' Built-In LED Control'));
+            $('#ledstste').fadeIn(270);
+        }
+        /*
         $.each(result, function (key, val) {
             if (key === 'code') {
-                
+
             } else if (key === 'result') {
                 $("#mcuTitle").text(val + ' Built-In LED Control');
                 $("title").text(val + ' Built-In LED Control');
             }
-        });
+        });*/
     }).always(function () {
         console.log('ajax always');
         $("#loading").fadeOut(270);
