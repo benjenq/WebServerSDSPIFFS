@@ -31,7 +31,7 @@ https://github.com/esp8266/Arduino
 6. Use web browser to connect to this webserver (**http://esp32webserver.local** for ESP32 module, or **http://esp8266webserver.local** for ESP8266 module) . 
 7. Done.
 
-**Known issue (ESP32 ONLY)**
+**Known issue (ESP32 ONLY)** *Fixed if use library [ESPAsyncWebServer](https://github.com/me-no-dev/ESPAsyncWebServer). See [Branch]((https://github.com/benjenq/WebServerSDSPIFFS/tree/ESPAsyncWebServer) *
 - ESP32: Web Server is **Very Very** slow. Get error message ``Failed to load resource: net::ERR_CONNECTION_RESET`` via Google Chrome. Hope it could be solve if [official version](https://github.com/espressif/arduino-esp32) library *WebServer* or SDK could be.
 
 
