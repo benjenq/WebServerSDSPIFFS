@@ -32,8 +32,8 @@ More detail about [**ESPAsyncWebServer**](https://github.com/me-no-dev/ESPAsyncW
 1. Launch Arduino IDE and open file [**WebServerSDSPIFFS.ino**](https://github.com/benjenq/WebServerSDSPIFFS/blob/master/WebServerSDSPIFFS.ino) . 
 2. Fill up your wifi parameter `ssid` and `password` related to your network enviroment.
 3. Choose one from SPIFFS or SD Card Reader:
-   Mark or Unmark `#define USE_SPIFFS` in [**BeSD_SPIFFS.h**](https://github.com/benjenq/WebServerSDSPIFFS/blob/master/BeSD_SPIFFS.h) (Line 36)<br>
-   See header comment in [**BeSD_SPIFFS.h**](https://github.com/benjenq/WebServerSDSPIFFS/blob/master/BeSD_SPIFFS.h)
+   Mark or Unmark `#define USE_SPIFFS` in [**BeSD_SPIFFS.h**](https://github.com/benjenq/WebServerSDSPIFFS/blob/ESPAsyncWebServer/BeSD_SPIFFS.h) (Line 36)<br>
+   See header comment in [**BeSD_SPIFFS.h**](https://github.com/benjenq/WebServerSDSPIFFS/blob/ESPAsyncWebServer/BeSD_SPIFFS.h)
 4. Build and upload the firmware to ESP32 or ESP8266 module with Arduino IDE.
 5. Use "Sketch Data Upload" tools to upload all files data\\\*.\* to SPIFFS , or copy all files data\\\*.\* to SD card. See [data\\README.md](https://github.com/benjenq/WebServerSDSPIFFS/blob/master/data/README.md) for more information.
 6. Use web browser to connect to this webserver (**http://esp32webserver.local** for ESP32 module, or **http://esp8266webserver.local** for ESP8266 module) . 
